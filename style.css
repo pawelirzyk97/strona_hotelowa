@@ -558,11 +558,17 @@ idth: 100%;
     }
     
 	
-    .images img {}
+    .images img {
+    transition-duration: 1s;
+    margin: 0 auto;
+    display: block;
+    }
 	.images img:hover{
-		width: 310px;
-		height: 210px;
-		border-radius: 5px;
+
+		transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    z-index: 0;
 	}
 	
 	
@@ -623,6 +629,7 @@ idth: 100%;
     @media (max-width: 1920px) and (min-width: 700px) {
         /*nav */
         .superhotel-text {
+            font-size: 39px;
             margin-top: 5px;
 			margin-left: 30px;
         }
